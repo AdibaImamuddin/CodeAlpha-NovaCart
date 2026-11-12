@@ -1,0 +1,141 @@
+
+/* ORDER SUCCESS PAGE */
+
+.order-success-page {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 620px;
+  padding: 45px 40px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.success-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+  color: #56845f;
+}
+
+.success-eyebrow {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.success-card h1 {
+  color: var(--text);
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.success-message {
+  max-width: 430px;
+  margin: 0 auto 30px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.order-details {
+  padding: 22px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  text-align: left;
+}
+
+.order-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.order-detail-row:last-child {
+  border-bottom: none;
+}
+
+.order-detail-row span {
+  color: var(--muted);
+}
+
+.order-detail-row strong {
+  color: var(--text);
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.success-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 14px;
+  background: var(--secondary);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.success-note svg {
+  flex-shrink: 0;
+  color: var(--primary);
+}
+
+.success-shop-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-top: 25px;
+  padding: 14px 25px;
+  background: var(--primary);
+  color: var(--button-text, white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.success-shop-btn:hover {
+  opacity: 0.88;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 550px) {
+  .success-card {
+    padding: 30px 18px;
+  }
+
+  .success-card h1 {
+    font-size: 24px;
+  }
+
+  .order-details {
+    padding: 15px;
+  }
+
+  .order-detail-row {
+    font-size: 12px;
+  }
+}
