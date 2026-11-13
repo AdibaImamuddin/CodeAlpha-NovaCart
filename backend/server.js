@@ -20,6 +20,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// API request se pehle database connection ensure karein
+app.use(async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (error) {
+    console.error("Database connection failed:", error.message);
+    res.status(500).json({
+      success: false,
+      message: "Database connection failed",
+    });
+  }
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/wishlist", wishlistRoutes);
 app.use("/api/addresses", addressRoutes);
@@ -36,14 +50,14 @@ app.get("/", (req, res) => {
   });
 });
 
-const startServer = async () => {
-  await connectDB();
+// Vercel ke liye Express app export
+export default app;
 
+// Local development ke liye server
+if (process.env.NODE_ENV !== "production") {
   const PORT = process.env.PORT || 7000;
 
   app.listen(PORT, () => {
     console.log(`NovaCart server running on port ${PORT}`);
   });
-};
-
-startServer();
+}
