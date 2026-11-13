@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:7000/api";
+const API_URL = "https://codealphanovacart-one.vercel.app/api";
 
 export const apiRequest = async (endpoint, options = {}) => {
   const token = localStorage.getItem("token");

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Plus, Search, Pencil, Trash2, X, Layers } from "lucide-react";
 import "../styles/adminCategories.css";
 
-const API = "http://localhost:7000/api/categories";
+const API = "https://codealphanovacart-one.vercel.app/api/categories";
 
 const emptyForm = {
   name: "",

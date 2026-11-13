@@ -108,7 +108,7 @@ function AdminDashboard() {
         }
 
         const response = await fetch(
-          "http://localhost:7000/api/dashboard/stats",
+          "https://codealphanovacart-one.vercel.app/api/dashboard/stats",
           {
             headers: {
               Authorization: `Bearer ${token}`,

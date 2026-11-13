@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Search, ShoppingBag, Eye, RefreshCw } from "lucide-react";
 import "../styles/adminOrders.css";
 
-const API = "http://localhost:7000/api/orders";
+const API = "https://codealphanovacart-one.vercel.app/api/orders";
 
 const STATUSES = [
   "Pending",

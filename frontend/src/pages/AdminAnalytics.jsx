@@ -11,8 +11,8 @@ import {
 
 import "../styles/adminAnalytics.css";
 
-const ORDERS_API = "http://localhost:7000/api/orders/admin/all";
-const PRODUCTS_API = "http://localhost:7000/api/products";
+const ORDERS_API = "https://codealphanovacart-one.vercel.app/api/orders/admin/all";
+const PRODUCTS_API = "https://codealphanovacart-one.vercel.app/api/products";
 
 function AdminAnalytics() {
   const [orders, setOrders] = useState([]);

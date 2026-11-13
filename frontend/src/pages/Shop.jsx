@@ -15,7 +15,7 @@ import {
 
 import "../styles/shop.css";
 
-const API = "http://localhost:7000/api/products";
+const API = "https://codealphanovacart-one.vercel.app/api/products";
 
 function Shop() {
   const [searchParams] = useSearchParams();

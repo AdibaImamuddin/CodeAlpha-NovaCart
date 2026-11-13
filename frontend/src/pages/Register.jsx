@@ -48,7 +48,7 @@ function Register() {
       setSuccess("");
 
       const response = await fetch(
-        "http://localhost:7000/api/auth/register",
+        "https://codealphanovacart-one.vercel.app/api/auth/register",
         {
           method: "POST",
           headers: {

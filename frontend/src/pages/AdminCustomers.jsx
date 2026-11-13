@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Search, Users, RefreshCw, Eye, X } from "lucide-react";
 import "../styles/adminCustomers.css";
 
-const API = "http://localhost:7000/api/users";
+const API = "https://codealphanovacart-one.vercel.app/api/users";
 
 function AdminCustomers() {
   const [customers, setCustomers] = useState([]);

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Plus, Search, Pencil, Trash2, X } from "lucide-react";
 import "../styles/adminProducts.css";
 
-const API = "http://localhost:7000/api/products";
+const API = "https://codealphanovacart-one.vercel.app/api/products";
 
 function AdminProducts() {
   const [products, setProducts] = useState([]);

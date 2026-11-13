@@ -31,7 +31,7 @@ function Login() {
       setError("");
 
       const response = await fetch(
-        "http://localhost:7000/api/auth/login",
+        "https://codealphanovacart-one.vercel.app/api/auth/login",
         {
           method: "POST",
           headers: {

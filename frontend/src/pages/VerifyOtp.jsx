@@ -31,7 +31,7 @@ function VerifyOtp() {
       setError("");
 
       const response = await fetch(
-        "http://localhost:7000/api/auth/verify-otp",
+        "https://codealphanovacart-one.vercel.app/api/auth/verify-otp",
         {
           method: "POST",
           headers: {
